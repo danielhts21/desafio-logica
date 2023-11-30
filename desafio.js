@@ -1,62 +1,28 @@
-//Entendendo o Desafio
- 
-//Agora é a sua hora de brilhar e construir um perfil de 
-//destaque na DIO! Explore todos os conceitos explorados até aqui 
-//e replique (ou melhore, porque não?) este projeto prático. 
-//Para isso, crie seu próprio repositório e aumente ainda mais seu 
-//portfólio de projetos no GitHub, o qual pode fazer toda diferença 
-//em suas entrevistas técnicas 😎
- 
-//Neste repositório, insira todos os links e arquivos necessários 
-//para seu projeto, seja um arquivo de banco de dados ou um link 
-//para o template no Figma.
- 
-//Dica: Se o expert forneceu um repositório Github, 
-//você pode dar um "fork" no repositório dele para organizar suas 
-//alterações e evoluções mantendo uma referência direta ao 
-//código-fonte original.
- 
-//Instruções para entrega
-//# 1️⃣ Desafio Classificador de nível de Herói
+let player1 = "Lorde Mago";
+let quantidadeDeXp = 8900;
 
-//**O Que deve ser utilizado**
+function determinarNivel(xp){
+  if (xp <= 1000){
+    return "Ferro";
+  }else if (xp <= 2000){
+    return "bronze"
+  }else if (xp <= 5000){
+    return "Prata";
+  }else if (xp <= 7000){
+    return "Ouro";
+  }else if (xp <= 8000){
+    return "Platina";
+  }else if (xp <= 9000){
+    return "Ascendente";
+  }else if (xp <= 10000){
+    return "Imortal";
+  }else {
+    return "Radiante";
+  }
 
-//- Variáveis
-//- Operadores
-//- Laços de repetição
-//- Estruturas de decisões
+  }
 
-//## Objetivo
+let nivelDoHeroi = determinarNivel(quantidadeDeXp)
 
-//Crie uma variável para armazenar o nome e a 
-//quantidade de experiência (XP) de um herói, 
-//depois utilize uma estrutura de decisão para apresentar 
-//alguma das mensagens abaixo:
+console.log("O Herói de nome " + player1 + " está no nível " + nivelDoHeroi)
 
-//Se XP for menor do que 1.000 = Ferro
-//Se XP for entre 1.001 e 2.000 = Bronze
-//Se XP for entre 2.001 e 5.000 = Prata
-//Se XP for entre 6.001 e 7.000 = Ouro
-//Se XP for entre 7.001 e 8.000 = Platina
-//Se XP for entre 8.001 e 9.000 = Ascendente
-//Se XP for entre 9.001 e 10.000= Imortal
-//Se XP for maior ou igual a 10.001 = Radiante
-
-//## Saída
-
-//Ao final deve se exibir uma mensagem:
-//"O Herói de nome **{nome}** está no nível de **{nivel}**"
-
-let player1 = "Lorde Mago"
-let XP = 999
-
-switch (XP){
-    case XP > 1000:
-        console.log("Ferro");
-        break;
-
-
-}
- 
- //vai dar certo!!!
-//Bons estudos 😉
