@@ -1,28 +1,47 @@
-let player1 = "Lorde Mago";
-let quantidadeDeXp = 8900;
+let player = "Lorde Daniel"
+let xp = 7001
 
-function determinarNivel(xp){
-  if (xp <= 1000){
-    return "Ferro";
-  }else if (xp <= 2000){
-    return "bronze"
-  }else if (xp <= 5000){
-    return "Prata";
-  }else if (xp <= 7000){
-    return "Ouro";
-  }else if (xp <= 8000){
-    return "Platina";
-  }else if (xp <= 9000){
-    return "Ascendente";
-  }else if (xp <= 10000){
-    return "Imortal";
-  }else {
-    return "Radiante";
-  }
+if (xp <= 1000){
+  xp = "Ferro"
+}else if (xp <=2000){
+  xp = "Bronze"
+}else if (xp <= 5000){
+  xp = "Prata"
+}else if (xp <=7000){
+  xp = "Ouro"
+}else if(xp <=8000){
+  xp = "Platina"
+}else if (xp <= 9000){
+  xp = "Ascendente"
+}else if( xp <= 10000){
+  xp = "Imortal"
+}else {
+  xp = "Radiante"
+}
 
-  }
-
-let nivelDoHeroi = determinarNivel(quantidadeDeXp)
-
-console.log("O Herói de nome " + player1 + " está no nível " + nivelDoHeroi)
-
+switch (xp) {
+  case "Ferro":
+    console.log("O herói de nome " + player + " está no nível " + xp);
+      break;
+  case "Bronze":
+    console.log("O herói de nome " + player + " está no nível " + xp)
+      break;
+  case "Prata":
+    console.log("O herói de nome " + player + " está no nível " + xp)
+      break;
+  case "Ouro":
+    console.log("O herói de nome " + player + " está no nível " + xp)
+      break;
+  case "Platina":
+    console.log("O herói de nome " + player + " está no nível " + xp);
+      break;
+  case "Ascentende":
+    console.log("O herói de nome " + player + " está no nível " + xp);
+    break;
+  case "Imortal":
+    console.logO("O herói de nome " + player + " está no nível " + xp);
+      break;
+  case "Radiante": 
+    console.log("O herói de nome " + player + " está no nível " + xp);
+      break;
+}
